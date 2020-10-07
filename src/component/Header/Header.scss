@@ -1,0 +1,31 @@
+@import '../../style/variables.scss';
+
+.header {
+    
+    .header__main {
+        position: absolute;
+        z-index: 1;
+        background-color: $color1;
+        color: $text-color;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        .header__menu {
+            display: flex;
+    
+            .header__menuitem {
+                padding: 10px 20px;
+                border-radius: 5px;
+    
+                &:hover {
+                    background-color: $color2;
+                    cursor: pointer;
+                }
+            }
+            .active {
+                background-color: $color3;
+            }
+        }
+    }
+}

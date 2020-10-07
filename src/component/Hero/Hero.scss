@@ -1,0 +1,67 @@
+@import '../../style/variables.scss';
+
+.Hero {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+    .carousel {
+        height: 100%;
+        background-image: linear-gradient(to right, $color1, $color3);
+    
+        .carousel-indicators-numbers {
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-indent: 0;
+                margin: 0 2px;
+                width: 30px;
+                height: 30px;
+                border: none;
+                border-radius: 100%;
+                line-height: 30px;
+                color: $color3;
+                background-color: transparent;
+                border: 1px solid $color3;
+                transition: all 0.25s ease;
+                &.active, &:hover {
+                    margin: 0 2px;
+                    width: 30px;
+                    height: 30px;
+                    color: $text-color;
+                    background-color: $color3;  
+                    cursor: pointer;      
+                }
+            }
+        }
+        
+        .homepage__imgbox {
+            width: 100%;
+            height: 100%;
+            
+            .homepage__image {
+                opacity: 0.5;
+                width: 100%;
+                height: auto;
+            }
+        }
+    
+        .carousel-control-prev, .carousel-control-next {
+            width: 100px;
+        }
+    
+        .circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            border-radius: 25px;
+            background-color: $color3;
+    
+            .carousel-control-prev-icon {
+                color: white;
+            }
+        }
+    }
+}

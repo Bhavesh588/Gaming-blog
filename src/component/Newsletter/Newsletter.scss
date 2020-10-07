@@ -1,0 +1,69 @@
+@import '../../style/variables.scss';
+
+.newsletter {
+    background-color: $color2;
+    padding: 100px;
+    color: $text-color;
+
+    .newsletter__box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-style: italic;
+        }
+
+        .newsletter__sub {
+            background-color: white;
+            font-style: italic;
+            border: 0;
+            padding: 20px 40px;
+            font-weight: 500;
+            color: black;
+            margin-left: 20px;
+            box-shadow: 10px 10px 1px $color4;
+            cursor: pointer;
+            
+            .arrowbtn__1 {
+                align-items: center;
+                font-size: 15px;
+                margin-left: 10px;
+                color: $color4;
+            }
+            .arrowbtn__2 {
+                font-size: 15px;
+                margin-left: -8px;
+                color: $color4;
+                opacity: 0.5;
+            }
+        }
+
+        .newsletter__form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin-top: 50px;
+
+            input {
+                width: 50%;
+                background-color: transparent;
+                border: 0;
+                font-size: 20px;
+                border-bottom: 1px solid $color4;
+                color: $text-color;
+                padding: 10px;
+            }
+            :focus {
+                outline: none;
+            }
+            ::placeholder {
+                color: $color4;
+                opacity: 0.5;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,32 @@
+@import '../../style/variables.scss';
+
+.latestnews {
+    background-color: $color2;
+    padding: 100px 0px;
+
+    .latestnews__content {
+        h2 {
+            color: $text-color;
+            font-style: italic;
+        }
+    }
+
+    .trending {
+        h3 {
+            color: $text-color;
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    }
+
+    .latestnews__ads {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .adsimg {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import '../../style/variables.scss';
+
+.videos {
+    padding: 20px 0px;
+
+    :hover {
+        background-color: $color1;
+    }
+
+    .videos__imgbox {
+        width: 100%;
+
+        .videos__img {
+            width: 100%;
+        }
+
+    }
+
+    .videos__content {
+        color: $text-color;
+
+        h3 {
+            color: $text-color;
+        }
+
+        h5 {
+            display: flex;
+    
+            .videos__games {
+                color: $color4;
+                margin-left: 8px;
+            }
+    
+        }
+        
+        .videos__text {
+            color: gray;
+            margin: 10px 0px 20px 5px;
+        }
+    
+        .videos__button {
+            background-color: white;
+            font-style: italic;
+            border: 0;
+            padding: 10px 20px;
+            font-weight: 500;
+            color: black;
+            box-shadow: 10px 10px 1px $color4;
+            cursor: pointer;
+            
+            .arrowbtn__1 {
+                align-items: center;
+                font-size: 15px;
+                margin-left: 10px;
+                color: $color4;
+            }
+            .arrowbtn__2 {
+                font-size: 15px;
+                margin-left: -8px;
+                color: $color4;
+                opacity: 0.5;
+            }
+        }
+    }
+}

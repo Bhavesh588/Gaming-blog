@@ -1,0 +1,25 @@
+@import '../../style/variables.scss';
+
+.trending {
+    color: $text-color;
+    
+    .trending__box {
+        margin-bottom: 20px;
+
+        .trending__img {
+            width: 100%;
+        }
+    
+        h5 {
+            display: flex;
+            font-size: 14px;
+            color: gray;
+    
+            .trending__games {
+                color: $color4;
+                margin-left: 8px;
+            }
+    
+        }
+    }
+}

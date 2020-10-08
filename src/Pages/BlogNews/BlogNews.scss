@@ -1,0 +1,53 @@
+@import '../../style/variables.scss';
+
+.blognews {
+    background-color: $color2;
+
+    .blognews__title {
+        position: absolute;
+        z-index: 1;
+        color: $text-color;
+        display: flex;
+        align-items: flex-end;
+        margin: 0px 50px;
+        height: 300px;
+    }
+
+    .blognews__hero {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-color: $color1;
+
+        .blognews__img {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            opacity: 0.5;
+        }
+    }
+
+    .blognews__content {
+        padding: 50px 0px;
+    
+        .trending {
+            h3 {
+                color: $text-color;
+                font-style: italic;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+        }
+    
+        .latestnews__ads {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            .adsimg {
+                width: 100%;
+            }
+        }
+    }
+    
+}

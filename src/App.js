@@ -1,12 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
-import Header from './component/Header/Header';
+
 import Homepage from './Pages/Homepage/Homepage';
 import Games from './Pages/Games/Games';
 import Contact from './Pages/Contact/Contact';
+import BlogNews from './Pages/BlogNews/BlogNews';
+
+import Header from './component/Header/Header';
 import Newsletter from './component/Newsletter/Newsletter';
-import Footer from './component/Footer/Footer'
+import Footer from './component/Footer/Footer';
 
 function App() {
   return (
@@ -19,6 +22,10 @@ function App() {
           
           <Route path="/contact">
             <Contact />
+          </Route>
+
+          <Route path="/blognews">
+            <BlogNews />
           </Route>
 
           <Route path="/games">

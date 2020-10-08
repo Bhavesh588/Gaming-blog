@@ -8,7 +8,7 @@ function Header() {
 
     window.onload = () => {
         var items = document.getElementsByClassName("header__menuitem")
-        var names = ["http://localhost:3000/", "http://localhost:3000/games", "", "", "http://localhost:3000/contact"]
+        var names = ["http://localhost:3000/", "http://localhost:3000/games", "", "http://localhost:3000/blognews", "http://localhost:3000/contact"]
         for(var i=0; i<items.length; i++) {
             if(window.location.href === names[i]) {
                 document.getElementsByClassName("header__menuitem")[i].classList.add('active')
@@ -24,7 +24,7 @@ function Header() {
     function handleActive(home) {
 
         var items = document.getElementsByClassName("header__menuitem")
-        var names = ["Home", "Games", "", "", "Contact"]
+        var names = ["Home", "Games", "", "BlogNews", "Contact"]
         for(var i=0; i<items.length; i++) {
             if(home === names[i]) {
                 document.getElementsByClassName("header__menuitem")[i].classList.add('active')
@@ -48,9 +48,12 @@ function Header() {
                         <Link to="/games" className="links" style={{ textDecoration: 'none', color: "white" }} onClick={() => handleActive("Games")}>
                             <div className="header__menuitem">Games</div>
                         </Link>
-                        <div className="header__menuitem">News</div>
+
                         <div className="header__menuitem">Reviews</div>
                         
+                        <Link to="/blognews" className="links" style={{ textDecoration: 'none', color: "white" }} onClick={() => handleActive("BlogNews")}>
+                            <div className="header__menuitem">Blog News</div>
+                        </Link>
                         <Link to="/contact" className="links" style={{ textDecoration: 'none', color: "white" }} onClick={() => handleActive("Contact")}>
                             <div className="header__menuitem">Contact</div>
                         </Link>

@@ -1,0 +1,57 @@
+@import '../../style/variables.scss';
+
+.blogpost {
+    width: 100%;
+    color: $text-color;
+    margin-bottom: 50px;
+    
+    .blogpost__imgbox {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+
+        .blogpost__img {
+            width: 100%;
+        }
+    }
+
+    h5 {
+        display: flex;
+        margin-top: 20px;
+
+        .blogpost__games {
+            color: $color4;
+            margin-left: 8px;
+        }
+    }
+    
+    .blogpost__text {
+        color: gray;
+        margin-top: 20px;
+    }
+
+    .blogpost__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $text-color;
+        font-style: italic;
+        background-color: transparent;
+        border: 0;
+        font-size: 17px;
+        font-weight: 500;
+        cursor: pointer;
+        
+        .arrowbtn__1 {
+            font-size: 15px;
+            margin-left: 20px;
+            color: $color4;
+        }
+        .arrowbtn__2 {
+            font-size: 15px;
+            margin-left: -8px;
+            color: $color4;
+            opacity: 0.5;
+        }
+    }
+}

@@ -1,22 +1,26 @@
 import React from 'react';
 
-import Post from './Post';
-import Trending from '../Trending/Trending';
+import './BlogNews.scss'
 
-import './LatestNews.scss'
+import Trending from '../../component/Trending/Trending';
+import BlogPost from '../../component/BlogPost/BlogPost';
 
-function LatestNews() {
+function BlogNews() {
     return (
-        <div className="latestnews">
-            <div className="latestnews__box container">
+        <div className="blognews">
+            <div className="blognews__title">
+                <h1>Blog News</h1>
+            </div>
+            <div className="blognews__hero">
+                <img className="blognews__img" src={require('F:\\Websites\\Gaming Blog\\gaming-blog\\src\\assets\\pexels-fox-3829227.jpg')} alt="First slide" />
+            </div>
+            <div className="container blognews__content">
                 <div className="row">
                     <div className="col-md-9">
-                        <div className="latestnews__content">
-                            <h2>LATEST NEWS</h2>
-                            <Post />
-                            <Post />
-                            <Post />
-                        </div>
+                        <BlogPost />
+                        <BlogPost />
+                        <BlogPost />
+                        <BlogPost />
                     </div>
                     <div className="col-md-3">
                         <div className="trending">
@@ -36,4 +40,4 @@ function LatestNews() {
     )
 }
 
-export default LatestNews
+export default BlogNews

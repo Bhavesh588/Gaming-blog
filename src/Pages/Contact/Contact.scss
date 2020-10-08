@@ -1,0 +1,104 @@
+@import '../../style/variables.scss';
+
+.contact {
+    background-color: $color2;
+
+    .contact__title {
+        position: absolute;
+        z-index: 1;
+        color: $text-color;
+        display: flex;
+        align-items: flex-end;
+        margin: 0px 50px;
+        height: 300px;
+    }
+    
+    .contact__hero {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        background-color: $color1;
+
+        .contact__img {
+            position: relative;
+            z-index: 0;
+            width: 100%;
+            opacity: 0.5;
+        }
+    }
+
+    .contact__form {
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        width: 100%;
+        // margin-top: 10px;
+
+        input {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            font-size: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $text-color;
+            color: $text-color;
+            padding: 10px;
+        }
+        :focus {
+            outline: none;
+        }
+        ::placeholder {
+            color: $text-color;
+            opacity: 0.8;
+        }
+
+        textarea {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            font-size: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid $text-color;
+            color: $text-color;
+            padding: 10px;
+        }
+
+        .contact__sub {
+            background-color: white;
+            font-style: italic;
+            border: 0;
+            padding: 20px 40px;
+            font-weight: 500;
+            color: black;
+            margin-top: 20px;
+            box-shadow: 10px 10px 1px $color4;
+            cursor: pointer;
+            
+            .arrowbtn__1 {
+                align-items: center;
+                font-size: 15px;
+                margin-left: 10px;
+                color: $color4;
+            }
+            .arrowbtn__2 {
+                font-size: 15px;
+                margin-left: -8px;
+                color: $color4;
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .contact__content {
+        color: $text-color;
+
+        .contact__text {
+            color: gray;
+        }
+    }
+
+    .icons {
+        color: $color4;
+    }
+
+}

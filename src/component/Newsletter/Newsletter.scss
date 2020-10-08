@@ -52,7 +52,7 @@
                 background-color: transparent;
                 border: 0;
                 font-size: 20px;
-                border-bottom: 1px solid $color4;
+                border-bottom: 1px solid $text-color;
                 color: $text-color;
                 padding: 10px;
             }
@@ -60,7 +60,7 @@
                 outline: none;
             }
             ::placeholder {
-                color: $color4;
+                color: $text-color;
                 opacity: 0.5;
             }
         }

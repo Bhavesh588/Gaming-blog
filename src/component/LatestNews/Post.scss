@@ -4,8 +4,20 @@
     color: $text-color;
     margin: 50px 0px;
 
-    .post__img {
+    .post__imgbox {
         width: 100%;
+        height: 300px;
+        overflow: hidden;
+
+        .post__img {
+            width: 100%;
+        }
+    }
+    
+    .post__content {
+        @media screen  and (max-width: 768px) {
+            padding: 20px 0px;
+        }
     }
 
     h5 {

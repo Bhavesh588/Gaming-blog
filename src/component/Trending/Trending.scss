@@ -2,12 +2,19 @@
 
 .trending {
     color: $text-color;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
     
     .trending__box {
         margin-bottom: 20px;
 
-        .trending__img {
-            width: 100%;
+        .trending__imgbox {
+            
+            .trending__img {
+                width: 100%;
+            }
         }
     
         h5 {

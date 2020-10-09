@@ -2,7 +2,7 @@
 
 .newsletter {
     background-color: $color1;
-    padding: 100px;
+    padding: 100px 0px;
     color: $text-color;
 
     .newsletter__box {
@@ -13,6 +13,10 @@
 
         h1 {
             font-style: italic;
+            @media screen and (max-width: 768px) {
+                font-size: 30px;
+                text-align: center;
+            }
         }
 
         .newsletter__sub {
@@ -22,9 +26,12 @@
             padding: 20px 40px;
             font-weight: 500;
             color: black;
-            margin-left: 20px;
             box-shadow: 10px 10px 1px $color4;
             cursor: pointer;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
             
             .arrowbtn__1 {
                 align-items: center;
@@ -40,29 +47,34 @@
             }
         }
 
+        input {
+            width: 50%;
+            background-color: transparent;
+            border: 0;
+            font-size: 20px;
+            border-bottom: 1px solid $text-color;
+            color: $text-color;
+            padding: 10px;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        :focus {
+            outline: none;
+        }
+        ::placeholder {
+            color: $text-color;
+            opacity: 0.5;
+        }
         .newsletter__form {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
             width: 100%;
             margin-top: 50px;
 
-            input {
-                width: 50%;
-                background-color: transparent;
-                border: 0;
-                font-size: 20px;
-                border-bottom: 1px solid $text-color;
-                color: $text-color;
-                padding: 10px;
-            }
-            :focus {
-                outline: none;
-            }
-            ::placeholder {
-                color: $text-color;
-                opacity: 0.5;
-            }
         }
 
     }

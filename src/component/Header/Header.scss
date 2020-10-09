@@ -1,15 +1,60 @@
 @import '../../style/variables.scss';
 
 .header {
+    background-color: $color1;
+    color: $text-color;
+    padding: 0px 20px;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .navbar-toggle {
+            display: none;
+            background-color: transparent;
+            color: $text-color;
+            height: fit-content;
+            border: 0px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            
+            &:hover {
+                background-color: $color3;
+            }
+        }
+    }
+
+    .header__menuitemdrop {
+        padding: 10px 20px;
+        border-radius: 5px;
+        
+        &:hover {
+            background-color: $color2;
+            cursor: pointer;
+        }
+    }
+    .active {
+        background-color: $color3;
+    }
     
     .header__main {
-        position: absolute;
+        // position: absolute;
         z-index: 1;
         background-color: $color1;
         color: $text-color;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 10px 0px;
     
         .header__menu {
             display: flex;
@@ -25,6 +70,25 @@
             }
             .active {
                 background-color: $color3;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .header {
+
+        .navbar-header {
+            
+            .navbar-toggle {
+                display: inherit;
+            }
+        }
+
+        .header__main {
+            .header__menu {
+                display: none;
             }
         }
     }

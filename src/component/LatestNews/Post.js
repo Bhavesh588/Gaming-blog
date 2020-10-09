@@ -15,15 +15,19 @@ function Post() {
             <div className="post__box container">
                 <div className="row">
                     <div className="col-md-5 p-0">
-                        <img src={require('F:\\Websites\\Gaming Blog\\gaming-blog\\src\\assets\\pexels-garrett-morrow-1337247 (1).jpg')} className="post__img" alt="" />
+                        <div className="post__imgbox">
+                            <img src={require('F:\\Websites\\Gaming Blog\\gaming-blog\\src\\assets\\pexels-garrett-morrow-1337247 (1).jpg')} className="post__img" alt="" />
+                        </div>
                     </div>
                     <div className="col-md-7">
-                        <h5>11.05.2019 in <p className="post__games">Games</p></h5>
-                        <h3>The best online game is out now!</h3>
-                        <p className="post__text">
-                            {truncate(Lorem, 200)}
-                        </p>
-                        <button className="post__button">Read More <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
+                        <div className="post__content">
+                            <h5>11.05.2019 in <p className="post__games">Games</p></h5>
+                            <h3>The best online game is out now!</h3>
+                            <p className="post__text">
+                                {truncate(Lorem, 200)}
+                            </p>
+                            <button className="post__button">Read More <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
+                        </div>
                     </div>
                 </div>
             </div>

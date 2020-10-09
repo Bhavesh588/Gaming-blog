@@ -2,7 +2,7 @@
 
 .newpost {
     background-color: $color1;
-    padding: 100px;
+    padding: 100px 10px;
     color: $text-color;
 
     h5 {
@@ -47,7 +47,12 @@
 
     .newpost__hr {
         background-color: $text-color;
-        opacity: 0.1;
+        opacity: 0.3;
+        margin: 50px 0px;
         display: none;
+
+        @media screen and (max-width: 768px) {
+            display: inherit;
+        }
     }
 }

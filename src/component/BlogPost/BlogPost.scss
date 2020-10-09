@@ -4,6 +4,7 @@
     width: 100%;
     color: $text-color;
     margin-bottom: 50px;
+    padding: 0px 20px;
     
     .blogpost__imgbox {
         width: 100%;
@@ -17,7 +18,7 @@
 
     h5 {
         display: flex;
-        margin-top: 20px;
+        margin-top: 10px;
 
         .blogpost__games {
             color: $color4;

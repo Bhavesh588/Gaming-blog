@@ -25,6 +25,9 @@
 
         h5 {
             display: flex;
+            @media screen and (max-width:768px) {
+                margin-top: 20px;
+            }
     
             .videos__games {
                 color: $color4;
@@ -47,6 +50,10 @@
             color: black;
             box-shadow: 10px 10px 1px $color4;
             cursor: pointer;
+
+            @media screen and (max-width:768px) {
+                width: 100%;
+            }
             
             .arrowbtn__1 {
                 align-items: center;

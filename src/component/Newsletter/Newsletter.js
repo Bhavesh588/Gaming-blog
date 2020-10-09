@@ -9,8 +9,16 @@ function Newsletter() {
             <div className="newsletter__box container-fluid">
                 <h1>SUBSCRIBE TO OUR NEWSLETTER</h1>
                 <div className="newsletter__form">
-                    <input type="text" className="newsletter__input" placeholder="Enter your Email" />
-                    <button className="newsletter__sub">SUBSCRIBE <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
+                    <div className="container-fluid">
+                        <div className="row">
+                            <div className="col-md-7 text-right">
+                                <input type="text" className="newsletter__input" placeholder="Enter your Email" />
+                            </div>
+                            <div className="col-md-5">
+                                <button className="newsletter__sub">SUBSCRIBE <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

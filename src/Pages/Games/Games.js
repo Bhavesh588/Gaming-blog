@@ -2,6 +2,7 @@ import React from 'react'
 
 import './Games.scss'
 import Videos from '../../component/Videos/Videos';
+import SearchBar from '../../component/SearchBar/SearchBar';
 
 function Games() {
 
@@ -17,6 +18,7 @@ function Games() {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-10">
+                            <SearchBar />
                             <Videos />
                             <Videos />
                             <Videos />

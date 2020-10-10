@@ -6,6 +6,7 @@ import Trending from '../../component/Trending/Trending';
 import BlogPost from '../../component/BlogPost/BlogPost';
 
 function BlogNews() {
+
     return (
         <div className="blognews">
             <div className="blognews__title">

@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 import './BlogPost.scss'
 
 function BlogPost() {
+    var [read, setRead] = useState(false)
+
+    function changeRead() {
+        if(read) {
+            setRead(false)
+        } else {
+            setRead(true)
+        }
+    }
 
     function truncate(str, n) {
         return str?.length > n ? str.substr(0, n - 1) + "..." : str;
@@ -18,9 +27,9 @@ function BlogPost() {
             <h5>11.05.2019 in <p className="blogpost__games">Games</p></h5>
             <h3>The best online game is out now!</h3>
             <p className="blogpost__text">
-                {truncate(Lorem, 250)}
+                {read ? truncate(Lorem) : truncate(Lorem, 250)}
             </p>
-            <button className="blogpost__button">Read More <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
+            <button className="blogpost__button" onClick={() => changeRead()}>{read ? 'Read less' : 'Read more'} <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
         </div>
     )
 }

@@ -37,11 +37,12 @@
             }
         }
         
-        .homepage__imgbox {
-            width: 100%;
+        .hero__imgbox {
+            // width: 100%;
             height: 100%;
-            
-            .homepage__image {
+            background-color: lawngreen;
+
+            .hero__image {
                 opacity: 0.5;
                 width: 100%;
                 height: auto;
@@ -49,8 +50,8 @@
         }
 
         .hero__content {
-            // position: absolute;
-            // z-index: 1;
+            position: relative;
+            z-index: 1;
             display: flex;
             flex-direction: column;
             width: 100%;

@@ -19,18 +19,18 @@ function Hero() {
                             <p className="hero__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <button className="hero__read">Read More <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
                         </div>
-                        <div className="homepage__imgbox">
-                            <img className="d-block homepage__image" src={require('F:\\Websites\\Gaming Blog\\gaming-blog\\src\\assets\\pexels-fox-3829227.jpg')} alt="First slide" />
+                        <div className="hero__imgbox">
+                            {/* <img className="d-block hero__image" src={require('F:\\Websites\\Gaming Blog\\gaming-blog\\src\\assets\\pexels-fox-3829227.jpg')} alt="First slide" /> */}
                         </div>
                     </div>
-                    <div className="carousel-item homepage__imgbox">
+                    <div className="carousel-item hero__imgbox">
                         <div className="hero__content">
                             <h1>Gamers News!</h1>
                             <p className="hero__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <button className="hero__read">Read More <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
                         </div>
-                        <div className="homepage__imgbox">
-                            <img className="d-block homepage__image" src={require('F:\\Websites\\Gaming Blog\\gaming-blog\\src\\assets\\pexels-lalesh-aldarwish-194511.jpg')} alt="Second slide" />
+                        <div className="hero__imgbox">
+                            <img className="d-block hero__image" src={require('F:\\Websites\\Gaming Blog\\gaming-blog\\src\\assets\\pexels-lalesh-aldarwish-194511.jpg')} alt="Second slide" />
                         </div>
                     </div>
                 </div>

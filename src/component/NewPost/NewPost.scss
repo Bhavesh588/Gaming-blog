@@ -5,54 +5,57 @@
     padding: 100px 10px;
     color: $text-color;
 
-    h5 {
-        display: flex;
+    .newpost__content {
 
-        .newpost__games {
-            color: $color4;
-            margin-left: 8px;
-        }
-
-    }
+        h5 {
+            display: flex;
     
-    .newpost__text {
-        color: gray;
-        margin: 50px 0px 20px 5px;
-    }
-
-    .newpost__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: $text-color;
-        font-style: italic;
-        background-color: transparent;
-        border: 0;
-        font-size: 17px;
-        font-weight: 500;
-        cursor: pointer;
+            .newpost__games {
+                color: $color4;
+                margin-left: 8px;
+            }
+    
+        }
         
-        .arrowbtn__1 {
-            font-size: 15px;
-            margin-left: 20px;
-            color: $color4;
+        .newpost__text {
+            color: gray;
+            margin: 50px 0px 20px 5px;
         }
-        .arrowbtn__2 {
-            font-size: 15px;
-            margin-left: -8px;
-            color: $color4;
-            opacity: 0.5;
+    
+        .newpost__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $text-color;
+            font-style: italic;
+            background-color: transparent;
+            border: 0;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+            
+            .arrowbtn__1 {
+                font-size: 15px;
+                margin-left: 20px;
+                color: $color4;
+            }
+            .arrowbtn__2 {
+                font-size: 15px;
+                margin-left: -8px;
+                color: $color4;
+                opacity: 0.5;
+            }
         }
-    }
-
-    .newpost__hr {
-        background-color: $text-color;
-        opacity: 0.3;
-        margin: 50px 0px;
-        display: none;
-
-        @media screen and (max-width: 768px) {
-            display: inherit;
+    
+        .newpost__hr {
+            background-color: $text-color;
+            opacity: 0.3;
+            margin: 50px 0px;
+            display: none;
+    
+            @media screen and (max-width: 768px) {
+                display: inherit;
+            }
         }
     }
 }

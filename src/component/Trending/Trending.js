@@ -4,7 +4,7 @@ import './Trending.scss';
 
 function Trending() {
     return (
-        <div className="trending">
+        <div className="trending" data-aos="fade-left">
             <div className="trending__box container p-0">
                 <div className="row">
                     <div className="col-md-5 py-0">

@@ -5,6 +5,9 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import './Hero.scss';
 
 function Hero() {
+
+    
+    
     return (
         <div className="Hero">
             <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="false">
@@ -14,7 +17,7 @@ function Hero() {
                 </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <div className="hero__content">
+                        <div className="hero__content" data-aos="fade-up">
                             <h1>Gamers World!</h1>
                             <p className="hero__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <button className="hero__read">Read More <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>
@@ -24,7 +27,7 @@ function Hero() {
                         </div>
                     </div>
                     <div className="carousel-item hero__imgbox">
-                        <div className="hero__content">
+                        <div className="hero__content" data-aos="fade-up">
                             <h1>Gamers News!</h1>
                             <p className="hero__des">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <button className="hero__read">Read More <ArrowForwardIosIcon className="arrowbtn__1" /><ArrowForwardIosIcon className="arrowbtn__2" /></button>

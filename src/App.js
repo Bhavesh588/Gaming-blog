@@ -18,8 +18,9 @@ function App() {
   AOS.init({
     offset: 200,
     duration: 200,
-    easing: 'ease-in-sine',
+    easing: 'ease-in-out',
     delay: 100,
+    once: true
 });
   return (
     <div className="app">

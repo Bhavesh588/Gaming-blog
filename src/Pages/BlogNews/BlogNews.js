@@ -4,8 +4,11 @@ import './BlogNews.scss'
 
 import Trending from '../../component/Trending/Trending';
 import BlogPost from '../../component/BlogPost/BlogPost';
+import Paging   from '../../component/Paging/Paging';
 
 function BlogNews() {
+
+    const blogpost = [<BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />, <BlogPost />]
 
     return (
         <div className="blognews">
@@ -18,10 +21,7 @@ function BlogNews() {
             <div className="container blognews__content">
                 <div className="row">
                     <div className="col-md-9">
-                        <BlogPost />
-                        <BlogPost />
-                        <BlogPost />
-                        <BlogPost />
+                        <Paging todos={blogpost} totalnumber={3} itemDisplay={3} />
                     </div>
                     <div className="col-md-3">
                         <div className="trending">

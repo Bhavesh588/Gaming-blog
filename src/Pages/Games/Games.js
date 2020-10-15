@@ -3,8 +3,11 @@ import React from 'react'
 import './Games.scss'
 import Videos from '../../component/Videos/Videos';
 import SearchBar from '../../component/SearchBar/SearchBar';
+import Paging from '../../component/Paging/Paging';
 
 function Games() {
+
+    const videos = [<Videos />, <Videos />, <Videos />, <Videos />, <Videos />]
 
     return (
         <div className="games">
@@ -19,10 +22,7 @@ function Games() {
                     <div className="row">
                         <div className="col-md-10">
                             <SearchBar />
-                            <Videos />
-                            <Videos />
-                            <Videos />
-                            <Videos />
+                            <Paging todos={videos} totalnumber={3} itemDisplay={2} />
                         </div>
                         <div className="col-md-2">
                             <div className="games__ads">

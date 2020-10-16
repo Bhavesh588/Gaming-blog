@@ -6,7 +6,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
-    database: '<database_name>'
+    database: 'nodemysql'
 });
 
 // Connect
@@ -20,7 +20,7 @@ db.connect((err) => {
 const app = express();
 
 app.get('/', (req, res) => {
-    const sqlInsert = "<first_insert>"
+    const sqlInsert = "INSERT INTO Email(email) VALUES ('bhavesh@gmail.com')"
     db.query(sqlInsert, (err, result) => {
         if(err) {
             console.log("There is an error in Insert query")
